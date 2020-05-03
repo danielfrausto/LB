@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lizzibear.Com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Raising the global vibration one song at a time.">
+        <meta name="og:title" property="og:title" content="Lizzibear says zimmer down">
+        
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background: #fff8e7;
+            }
+            .nav-bar{
+               display: grid;
+               grid-template-columns: auto auto;
+                min-height: 50px;
+                width: 100vw;
+                box-shadow: 5px 10px #8888882f;
+            }
+            .coming-soon{
+                position:absolute ;
+                top: 40%;
+                left: 50%;
+                width: 400px;
+                height: 400px;
+                margin: auto;
+                text-align: center;
+                background: url("assets/img/artist-photo.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                margin-top: -200px;
+                margin-left: -200px;
+
+            }
+            .text{
+                position: relative;
+                top: 400px;
+            }
+
+
+            .social-icons-container{
+                display: table;
+                margin: 0 auto;
+                min-height: 45px;
+                width:100%;
+            }
+
+            .icon-container{
+            height: 45px;
+            width: 45px;
+            display: inline-block;
+            margin:auto;
+            }
+            .icon-youtube {
+            height: 100%;
+            width: 100%;
+            background: url("assets/icon/social/youtube.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+
+            .icon-facebook {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/facebook.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .icon-instagram {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/instagram.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .icon-twitter {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/twitter.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .icon-periscope {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/periscope.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .icon-spotify {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/spotify.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .icon-itunes {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/itunes.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .icon-bandcamp {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/bandcamp.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .icon-paypal {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/paypal.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .icon-patreon {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/patreon.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .icon-discord {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/discord.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .icon-etsy {
+                height: 100%;
+                width: 100%;
+                background: url("assets/icon/social/etsy.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+
+
+            .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: #fff8e7;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.content{
+    display: block;
+    margin-top: 25px;
+   
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+        </style>
+
+<style>
+    .lizzibearisms-container{
+        margin: auto;
+        background: #ffb7c5;
+        max-width: 650px;
+        width: 80%;
+        border-radius: 25px;
+        
+
+    }
+    .lizzibearisms-background-container{
+        height: 100%;
+        width: 100%;
+        background-image: url("assets/img/lantern-corner.png");
+        background-size: contain;
+        border-radius: 25px;
+        height: auto;
+        background-position:right;
+        background-repeat: no-repeat;
+
+        padding-right: 45px;
+        padding-left: 25px;
+        
+    }
+    
+    .lizzibearisms{
+        margin: auto;
+        width: 100%;
+        border-radius: 25px;
+        
+        font-style:italic;
+        font-weight: bold;   
+
+        display: grid;
+        grid-template-rows: auto auto;        
+    }
+    .quotes{
+        font-size: 32px;
+        font-style:italic;
+        font-weight: bold;  
+       
+    }
+    .lizzibearism{
+        padding-top: 25px;
+        padding-right: 50px;
+        grid-row-start: 1;
+       
+       
+       
+    }
+    .author-credit{
+        width: 100%;
+        grid-row-start: 2;
+        text-align: right;
+        padding-right: 35px;
+    }
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+           <div class="social-icons-container">
+               <a href="https://lizzibear.bandcamp.com" target="_blank"><div class="icon-container"><div class="icon-bandcamp"></div></div></a>
+                <a href="https://itunes.apple.com/us/artist/lizzibear/1420488969" target="_blank"><div class="icon-container"><div class="icon-itunes"></div></div></a>
+                <a href="https://open.spotify.com/artist/53g8asZD7Tu2eRLyo4D2RG" target="_blank"><div class="icon-container"><div class="icon-spotify"></div></div></a>
+                <a href="https://www.paypal.me/lizzibear/1" target="_blank"><div class="icon-container"><div class="icon-paypal"></div></div></a>
+                <a href="https://www.patreon.com/lizzibear" target="_blank"><div class="icon-container"><div class="icon-patreon"></div></div></a>
+                <a href="https://www.periscope.tv/lizzibear" target="_blank"><div class="icon-container"><div class="icon-periscope"></div></div></a>
+                <a href="https://www.youtube.com/partygirlbeth" target="_blank" ><div class="icon-container"><div class="icon-youtube"></div></div></a>
+                <a href="https://www.facebook.com/lizzibearmusic"target="_blank"><div class="icon-container"><div class="icon-facebook"></div></div></a>
+                <a href="https://www.twitter.com/lizzibear" target="_blank"><div class="icon-container"><div class="icon-twitter"></div></div></a>
+                <a href="https://www.instagram.com/lizzibearmusic" target="_blank"><div class="icon-container"><div class="icon-instagram"></div></div></a>
+                <a href="http://www.etsy.com/ca/shop/LizzibearsHugs" target="_blank"><div class="icon-container"><div class="icon-etsy"></div></div></a>
+                <a href="https://discord.gg/NhyGxcn" target="_blank"><div class="icon-container"><div class="icon-discord"></div></div></a>
+           </div>
+
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="javascript:;" onclick="getPage(this);">Home</a>
+                <a href="javascript:;" onclick="getPage(this);">Downloads</a>
+                <a href="javascript:;" onclick="getPage(this);">Services</a>
+                <a href="javascript:;" onclick="getPage(this);">Links</a>
+                <a href="javascript:;" onclick="getPage(this);">Lizzibearisms</a>
+                <a href="javascript:;" onclick="getPage(this);">Randomizer</a>
+                <a href="javascript:;" onclick="getPage(this);">About</a>
+                <a href="javascript:;" onclick="getPage(this);">Contact</a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="content" id="content">
+            <div class="page">
+                <div class="artist-photo-container">
+                    <div class="artist-photo"></div>
+                </div>
+                <div>
+                    <div class="post">
+                        <h3>Shine bright, my lanterns</h3>
+                        <p>
+                            I am a believer in true love, fairytales & wishing upon stars and found myself dreaming about the
+                            process of falling in deep love in 2018. Then, I started to write a song that summer about the
+                            butterflies that tickle your tummy before your heart floats away with them and you find yourself
+                            hopelessly/endlessly in love. I ran with that theme and kept writing more songs about every step of
+                            the way when you let yourself fall into another. I didn&#39t expect to end up with a whole album of
+                            songs about all the steps of falling in love just 1 short year later! I&#39m still writing mostly
+                            uplifting and loving songs and can&#39t wait to show you what&#39s next! Connect with me on social media
+                            and let me know what you think of my songs. &#129303&#127982</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+   
+    <script>
+        function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+function getPage(element){
+    if(element.innerText.toLowerCase()=="randomizer"){
+        link = "*/index.html".replace("*",element.innerText.toLowerCase());
+    }else{
+    link = "*.html".replace("*",element.innerText.toLowerCase());
+
+    }
+    //alert(link);
+    if (link.includes(".html") != true) return;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("content").innerHTML = xhttp.responseText;
+        }
+    };
+    xhttp.open("GET", link, true);
+    xhttp.send();
+    
+    if(element.innerText.toLowerCase() =="lizzibearisms" ){
+        getIsm();
+    }
+
+
+
+
+    closeNav();
+    element.preventDefault();
+}
+function getIsm() {
+        var oReq = new XMLHttpRequest(); // New request object
+        oReq.onload = function () {
+            document.getElementById("lizzibearism").innerText = this.responseText;
+        };
+        oReq.open("get", "lizzibearisms.php", true);
+        oReq.send();
+    }
+    </script>
+    </body>
+</html>
